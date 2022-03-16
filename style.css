@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+body:target .d-none {
+  display: unset;
+}
+
+.header {
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 0px 1px #DADCE0;
+  height: 100px;
+}
+
+.googleimg {
+  height: 75x;
+  width: 75px;
+  margin: 20px 5px 20px 20px;
+}
+
+.headertext {
+  color: #5F6368;
+  font-size: 25px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.d-none {
+  display: none;
+}
+
+.notebtn {
+  height: 10vh;
+  width: 150px;
+  margin: 50px 0px 0px 0px;
+}
+
+.note-bg {
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divnotes {
+  width: 60%;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px;
+  position: relative;
+}
+
+.delete {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.title {
+  border-width: 0px;
+  font-size: 15px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.text {
+  border-width: 0px;
+  font-size: 15px;
+  height: 200px;
+  outline: none;
+  font-family: 'Raleway', sans-serif;
+}
+
+.savebtn {
+  width: 100px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 15px;
+  border-radius: 10px;
+}
+
+.closeNote {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  height: 30px;
+}
+
+.btnaddnote {
+  margin-top: 50px;
+  height: 50px;
+  width: 200px;
+  cursor: pointer;
+}
+
+.note {
+  background-color: #efefef;
+  height: 20vh;
+  width: 20vw;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 20px;
+}
+
+.deleteNote {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.btnaddnotediv {
+  display: flex;
+  justify-content: center;
+}
+
+.noteTitle {
+  margin: 20px 0px 30px 0px;
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
